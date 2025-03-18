@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТДС</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @font-face {
-    font-family: 'Intro';
-    src: url('Intro.otf') format('truetype');
-}
+            font-family: 'Intro';
+            src: url('Intro.otf') format('truetype');
+        }
         body {
             display: flex;
             flex-direction: column;
@@ -37,33 +38,38 @@
             }
         }
         h1, p {
-            color: #009CBA; /* Бірюзовий колір */
+            color: #009CBA;
             margin: 10px 10px;
         }
         h2 {
-            color: #e7d300; /* Бірюзовий колір */
+            color: #e7d300;
             margin: 10px 10px;
-            
         }
         p {
             margin-bottom: 40px;
         }
         
         .link {
-            display: block;
-            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 220px;
             padding: 15px;
             margin: 10px 0;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
-            color: #009CBA; /* Бірюзовий колір */
+            color: #009CBA;
             background: rgba(255, 255, 255, 0.3);
             border: 2px solid #ffffff;
             border-radius: 20px;
             transition: 0.3s;
             animation: fadeInUp 0.5s ease-in-out forwards;
             opacity: 0;
+        }
+        .link i {
+            font-size: 20px;
         }
         @keyframes fadeInUp {
             from {
@@ -80,6 +86,39 @@
             border-color: #facc15;
             color: #facc15;
         }
+
+        /* Заголовок перед списком городов */
+        .forum-title {
+            color: #003366;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        /* Новые кнопки с городами */
+        .city-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .city-button {
+            display: inline-block;
+            width: 140px;
+            padding: 10px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #003366;
+            border-radius: 15px;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .city-button:hover {
+            background: #0055aa;
+        }
     </style>
 </head>
 <body>
@@ -87,14 +126,36 @@
     <h1>Тижні Добрих Справ</h1>
     <h2>Хто, як не ми? Коли, як не зараз?</h2>
     <p>Щорічний благодійний проєкт, який об'єднує людей заради Добрих Справ.</p>
+    
+    <a href="https://forms.gle/EgSbCTKVYLpPznLUA" class="link" style="animation-delay: 0.2s;">
+        <i class="fa-solid fa-clipboard-check"></i> Зареєструвати свій захід
+    </a>
+    <a href="https://www.instagram.com/weeksforcharity.ua?igsh=MWg2bno4ejJ5NzFvbQ==" class="link" style="animation-delay: 0.6s;">
+        <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+    <a href="#" class="link" style="animation-delay: 0.7s;">
+        <i class="fa-brands fa-facebook"></i> Facebook
+    </a>
+    <a href="https://t.me/annushhkaaaa" class="link" style="animation-delay: 0.8s;">
+        <i class="fa-brands fa-telegram"></i> Комунікація з менеджером
+    </a>
 
-    <a href="project.html" class="link" style="animation-delay: 0.05s;">Про проєкт</a>
-    <a href="https://forms.gle/8AoFRQyYNHkqNBAk8" class="link" style="animation-delay: 0.2s;">Реєстрація на участь</a>
-    <a href="#" class="link" style="animation-delay: 0.4s;">Сайт</a>
-    <a href="https://www.instagram.com/weeksforcharity.ua?igsh=MWg2bno4ejJ5NzFvbQ==" class="link" style="animation-delay: 0.6s;">Instagram</a>
-    <a href="https://www.facebook.com/share/1ANeuRjz1m/?mibextid=wwXIfr" class="link" style="animation-delay: 0.6s;">Facebook</a>
-    <a href="https://youtube.com/channel/UCc7p5MDplmb3uCiCPDVMuNg?si=yu9q3_k-iPGzTIFe" class="link" style="animation-delay: 0.8s;">YouTube</a>
-    <a href="https://t.me/annushhkaaaa" class="link" style="animation-delay: 1.0s;">Комунікація з менеджером</a>
+    <!-- Заголовок перед списком городов -->
+    <h2 class="forum-title">Зареєструватись на форум</h2>
 
+    <!-- Блок с городами -->
+    <div class="city-buttons">
+        <a href="https://forms.gle/YrPZbP3wTrvTCPZn8" class="city-button">Київ (ОВА) 20.03</a>
+        <a href="https://forms.gle/bcdriDW2epSh9Y1c9" class="city-button">Київ    21.03</a>
+        <a href="https://forms.gle/ctiUaePYYtG4LH5e8" class="city-button">Харків   01.04</a>
+        <a href="https://forms.gle/QjDPrRYVdXjKcoBC9" class="city-button">Миколаїв 03.04</a>
+        <a href="https://forms.gle/HW7R12PKNTCM48JL9" class="city-button">Вінниця 25.03</a>
+        <a href="https://forms.gle/VygvPRF7c6zhxGPo6" class="city-button">Дніпро  02.04</a>
+        <a href="https://forms.gle/9qrzp3kBxrCPJbGv5" class="city-button">Запоріжжя 31.03</a>
+        <a href="https://forms.gle/QjDPrRYVdXjKcoBC9" class="city-button">Львів    26.03</a>
+        <a href="https://forms.gle/9cHzK3mv3mFwTGWM8" class="city-button">Хмельницький 27.03</a>
+        <a href="https://forms.gle/Pb86ngnXGNEkxT5s7" class="city-button">Чернівці 28.03</a>
+        <a href="https://forms.gle/8EUQ4KznqUvmfKJt9" class="city-button">Черкаси   29.03</a>
+    </div>
 </body>
 </html>
